@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
+
+.header_row{
+    width:100%;
+    background:#333;
+    color:#fff;
+    padding:20px;
+    margin-bottom:30px;
+}
+.header_row .btn{
+ margin-top:-40px;
+}
+
+.container{
+    background:#fff;
+    color:#333;
+    padding:20px;
+
+}

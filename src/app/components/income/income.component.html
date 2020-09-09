@@ -1,0 +1,28 @@
+<div class="header_row">
+    <h3>Income</h3>
+    <button [routerLink]="['/add-income/']" class="btn btn-block col-md-3 pull-right">Add New</button>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-md-9">
+
+      <div class="row" *ngFor="let income of incomes">
+          <div class="col-md-4">
+              {{income.name}}
+          </div>
+          <div class="col-md-5">
+              {{income.amount}}
+          </div>
+          <div class="col-md-3">
+              <button type="button" 
+              [routerLink]="['/edit-income/']"
+              class="btn btn-link pull-left">Edit</button>
+              <button type="button" 
+              class="btn btn-link pull-right">Delete</button>
+          </div>
+      </div>
+      <p>total : {{ totalIncome | currency:"USD":"symbol" }}</p>
+    </div>
+  </div>

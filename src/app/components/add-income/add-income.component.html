@@ -1,0 +1,50 @@
+<div class="header_row">
+  <h3>Add Income</h3>
+</div>
+<div class="row">
+  <div class="col-md-3">
+      <app-sidebar></app-sidebar>
+  </div>
+  <div class="col-md-9">
+        <form novalidate #f="ngForm" (ngSubmit)="onSubmit(f)">
+
+          
+          
+
+              <div class="card w-50 pull-left p-2 mb-1">
+                <div class="card-body">
+                    <input 
+                    placeholder="Name"
+                    type="text"
+                    class="form-control mb-1"
+                    name='name'>
+                    <input 
+                    placeholder="Amount"
+                    type="number"
+                    class="form-control mb-1"
+                    name='amount'>
+                </div>
+              </div>
+              <div class="card w-50 pull-right p-2 mb-1">
+                    <div class="card-body">
+                      <input 
+                      placeholder="Due Date"
+                      type="date"
+                      class="form-control mb-1"
+                      name='due'>
+                      <select class="form-control mb-1" name='status'>
+                        <option value="1">new</option>
+                        <option value="2">open</option>
+                        <option value="3">paid</option>
+                        <option value="4">archived</option>
+                      </select>
+                  </div>
+              </div>
+ 
+            
+ 
+          <input type="submit" class="btn btn-primary btn-block w-25" 
+          value="Continue" />
+        </form>
+    </div>
+  </div>
